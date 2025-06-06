@@ -1,0 +1,15 @@
+# config.yaml
+glucose:
+  target_range: [3.9, 10.0]
+  units: "mmol/L"
+
+visualization:
+  figure_size: [15, 4]
+  dpi: 300
+  style: "seaborn"
+
+data_sources:
+  glucose_file: "glucose_data.csv"
+  sleep_file: "sleepdata.csv"
+  workout_file: "workout_data.csv"
+  nutrition_file: "food_log.csv"

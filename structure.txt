@@ -1,0 +1,49 @@
+glucose-tracker/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── setup.py
+├── config.yaml
+├── 
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── loader.py
+│   │   └── processor.py
+│   ├── visualization/
+│   │   ├── __init__.py
+│   │   ├── dashboard.py
+│   │   └── plots.py
+│   └── utils/
+│       ├── __init__.py
+│       ├── helpers.py
+│       └── exceptions.py
+├── 
+├── data/
+│   ├── sample/
+│   │   ├── sample_glucose.csv
+│   │   ├── sample_sleep.csv
+│   │   └── sample_nutrition.csv
+│   └── .gitkeep
+├── 
+├── tests/
+│   ├── __init__.py
+│   ├── test_data_loader.py
+│   ├── test_processor.py
+│   └── test_dashboard.py
+├── 
+├── notebooks/
+│   ├── exploratory_analysis.ipynb
+│   └── dashboard_examples.ipynb
+├── 
+├── docs/
+│   ├── user_guide.md
+│   ├── api_reference.md
+│   └── data_format_specs.md
+└── 
+└── scripts/
+    ├── run_analysis.py
+    └── export_dashboard.py
