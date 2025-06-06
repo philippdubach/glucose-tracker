@@ -17,7 +17,7 @@ A comprehensive blood sugar tracking and analysis dashboard that integrates data
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/glucose-tracker.git
+git clone https://github.com/philippdubach/glucose-tracker.git
 cd glucose-tracker
 
 # Install dependencies
@@ -162,7 +162,7 @@ glucose-tracker/
 
 ```bash
 # Clone and install in development mode
-git clone https://github.com/yourusername/glucose-tracker.git
+git clone https://github.com/philippdubach/glucose-tracker.git
 cd glucose-tracker
 pip install -e ".[dev]"
 
@@ -176,14 +176,6 @@ pytest --cov=glucose_tracker
 black src/
 flake8 src/
 ```
-
-### Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## Data Format Examples
 
@@ -225,13 +217,6 @@ Date,Time,Meal,P_Macro,F_Macro,C_Macro
 - Use `show_annotations: false` for cleaner plots
 - Adjust figure size for better spacing
 
-### Getting Help
-
-- 📖 [User Guide](docs/user_guide.md)
-- 🔧 [API Reference](docs/api_reference.md)
-- 💬 [Discussions](https://github.com/yourusername/glucose-tracker/discussions)
-- 🐛 [Issue Tracker](https://github.com/yourusername/glucose-tracker/issues)
-
 ## Roadmap
 
 - [ ] **Web Interface**: Flask-based web dashboard
@@ -256,8 +241,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ⚠️ **Medical Disclaimer**: This tool is for informational purposes only and should not replace professional medical advice. Always consult with healthcare providers for medical decisions.
 
----
-
-**Made with ❤️ for the diabetes community**
-
-*Star ⭐ this repo if it helps you manage your glucose better!*
