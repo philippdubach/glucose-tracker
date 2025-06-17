@@ -156,27 +156,6 @@ glucose-tracker/
 └── notebooks/              # Jupyter analysis examples
 ```
 
-## Development
-
-### Setting up Development Environment
-
-```bash
-# Clone and install in development mode
-git clone https://github.com/philippdubach/glucose-tracker.git
-cd glucose-tracker
-pip install -e ".[dev]"
-
-# Run tests
-pytest
-
-# Run with coverage
-pytest --cov=glucose_tracker
-
-# Format code
-black src/
-flake8 src/
-```
-
 ## Data Format Examples
 
 ### Glucose Data (LibreView Export)
@@ -216,15 +195,6 @@ Date,Time,Meal,P_Macro,F_Macro,C_Macro
 - Reduce annotation density in config
 - Use `show_annotations: false` for cleaner plots
 - Adjust figure size for better spacing
-
-## Roadmap
-
-- [ ] **Web Interface**: Flask-based web dashboard
-- [ ] **Real-time Updates**: Live data streaming from CGM
-- [ ] **Predictive Analytics**: ML models for glucose prediction
-- [ ] **Mobile App**: Companion mobile application
-- [ ] **API Integration**: Direct connection to health platforms
-- [ ] **Advanced Analytics**: HbA1c estimation, pattern recognition
 
 ## License
 
