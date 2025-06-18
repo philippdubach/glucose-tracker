@@ -2,14 +2,10 @@
 
 A comprehensive blood sugar tracking and analysis dashboard that integrates data from Abbott CGM devices with workout, nutrition, and sleep data to provide detailed health insights.
 
-## Features
-
-- 📊 **Multi-source Data Integration**: Combines glucose data with sleep, workout, and nutrition information
-- 📈 **Interactive Visualizations**: Daily glucose trends with activity overlays
-- 📋 **Health Metrics**: Time in Range (TIR), glucose variability, and statistical analysis
-- 🎯 **Target Range Monitoring**: Visual indicators for optimal glucose levels
-- 📱 **Multiple Export Formats**: PDF, PNG, and interactive HTML dashboards
-- ⚙️ **Customizable Configuration**: Easy setup via YAML configuration files
+- Combines glucose data with sleep, workout, and nutrition information
+- Daily glucose trends with activity overlays
+- Time in Range (TIR), glucose variability, and statistical analysis
+- Visual indicators for optimal glucose levels
 
 ## Quick Start
 
@@ -43,19 +39,6 @@ tracker.process_data()
 
 # Generate dashboard
 tracker.generate_dashboard()
-```
-
-### Command Line Interface
-
-```bash
-# Generate dashboard for specific date range
-python -m glucose_tracker --start-date 2024-01-01 --end-date 2024-01-31
-
-# Export to PDF
-python -m glucose_tracker --output dashboard.pdf --format pdf
-
-# Use custom config
-python -m glucose_tracker --config my_config.yaml
 ```
 
 ## Data Sources
@@ -132,13 +115,6 @@ Dashboard Generated Successfully!
 └─────────────────────────────────────────┘
 ```
 
-## Data Privacy & Security
-
-- 🔒 **Local Processing**: All data processing happens locally on your machine
-- 🚫 **No Cloud Upload**: Your health data never leaves your device
-- 🗂️ **Flexible Storage**: Store data wherever you choose
-- 🔐 **Optional Encryption**: Encrypt sensitive data files
-
 ## Project Structure
 
 ```
@@ -200,14 +176,8 @@ Date,Time,Meal,P_Macro,F_Macro,C_Macro
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Abbott for LibreView glucose monitoring system
-- Sleep Cycle for sleep tracking data
-- Hevy and Garmin for workout data integration
-- The open-source Python community for excellent libraries
 
 ## Disclaimer
 
-⚠️ **Medical Disclaimer**: This tool is for informational purposes only and should not replace professional medical advice. Always consult with healthcare providers for medical decisions.
+This tool is for informational purposes only and should not replace professional medical advice. Always consult with healthcare providers for medical decisions.
 
