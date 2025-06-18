@@ -2,14 +2,10 @@
 
 A comprehensive blood sugar tracking and analysis dashboard that integrates data from Abbott CGM devices with workout, nutrition, and sleep data to provide detailed health insights.
 
-## Features
-
-- 📊 **Multi-source Data Integration**: Combines glucose data with sleep, workout, and nutrition information
-- 📈 **Interactive Visualizations**: Daily glucose trends with activity overlays
-- 📋 **Health Metrics**: Time in Range (TIR), glucose variability, and statistical analysis
-- 🎯 **Target Range Monitoring**: Visual indicators for optimal glucose levels
-- 📱 **Multiple Export Formats**: PDF, PNG, and interactive HTML dashboards
-- ⚙️ **Customizable Configuration**: Easy setup via YAML configuration files
+- Combines glucose data with sleep, workout, and nutrition information
+- Daily glucose trends with activity overlays
+- Time in Range (TIR), glucose variability, and statistical analysis
+- Visual indicators for optimal glucose levels
 
 ## Quick Start
 
@@ -43,19 +39,6 @@ tracker.process_data()
 
 # Generate dashboard
 tracker.generate_dashboard()
-```
-
-### Command Line Interface
-
-```bash
-# Generate dashboard for specific date range
-python -m glucose_tracker --start-date 2024-01-01 --end-date 2024-01-31
-
-# Export to PDF
-python -m glucose_tracker --output dashboard.pdf --format pdf
-
-# Use custom config
-python -m glucose_tracker --config my_config.yaml
 ```
 
 ## Data Sources
@@ -97,22 +80,22 @@ export:
 
 ## Dashboard Features
 
-### 📊 Daily Glucose Trends
+### Daily Glucose Trends
 - Continuous glucose monitoring visualization
 - Target range highlighting (3.9-10.0 mmol/L)
 - Median glucose line overlay
 
-### 🏃‍♂️ Activity Integration
+### Activity Integration
 - **Strength Training**: Yellow overlay during workout periods
 - **Cardio**: Colored markers for cardio activities
 - **Sleep**: Blue highlighted periods with quality metrics
 
-### 🍽️ Nutrition Tracking
+### Nutrition Tracking
 - Meal markers with macro breakdown
 - Smart annotation positioning to avoid overlap
 - Glucose response correlation
 
-### 📈 Statistics Panel
+### Statistics Panel
 - Daily glucose statistics (mean, median, std dev)
 - Time in Range (TIR) percentage
 - Coefficient of Variation (CV)
@@ -132,13 +115,6 @@ Dashboard Generated Successfully!
 └─────────────────────────────────────────┘
 ```
 
-## Data Privacy & Security
-
-- 🔒 **Local Processing**: All data processing happens locally on your machine
-- 🚫 **No Cloud Upload**: Your health data never leaves your device
-- 🗂️ **Flexible Storage**: Store data wherever you choose
-- 🔐 **Optional Encryption**: Encrypt sensitive data files
-
 ## Project Structure
 
 ```
@@ -154,27 +130,6 @@ glucose-tracker/
 ├── tests/                   # Unit tests
 ├── docs/                    # Documentation
 └── notebooks/              # Jupyter analysis examples
-```
-
-## Development
-
-### Setting up Development Environment
-
-```bash
-# Clone and install in development mode
-git clone https://github.com/philippdubach/glucose-tracker.git
-cd glucose-tracker
-pip install -e ".[dev]"
-
-# Run tests
-pytest
-
-# Run with coverage
-pytest --cov=glucose_tracker
-
-# Format code
-black src/
-flake8 src/
 ```
 
 ## Data Format Examples
@@ -217,27 +172,12 @@ Date,Time,Meal,P_Macro,F_Macro,C_Macro
 - Use `show_annotations: false` for cleaner plots
 - Adjust figure size for better spacing
 
-## Roadmap
-
-- [ ] **Web Interface**: Flask-based web dashboard
-- [ ] **Real-time Updates**: Live data streaming from CGM
-- [ ] **Predictive Analytics**: ML models for glucose prediction
-- [ ] **Mobile App**: Companion mobile application
-- [ ] **API Integration**: Direct connection to health platforms
-- [ ] **Advanced Analytics**: HbA1c estimation, pattern recognition
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
-
-- Abbott for LibreView glucose monitoring system
-- Sleep Cycle for sleep tracking data
-- Hevy and Garmin for workout data integration
-- The open-source Python community for excellent libraries
 
 ## Disclaimer
 
-⚠️ **Medical Disclaimer**: This tool is for informational purposes only and should not replace professional medical advice. Always consult with healthcare providers for medical decisions.
+This tool is for informational purposes only and should not replace professional medical advice. Always consult with healthcare providers for medical decisions.
 
