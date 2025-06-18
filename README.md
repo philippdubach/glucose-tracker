@@ -80,22 +80,22 @@ export:
 
 ## Dashboard Features
 
-### 📊 Daily Glucose Trends
+### Daily Glucose Trends
 - Continuous glucose monitoring visualization
 - Target range highlighting (3.9-10.0 mmol/L)
 - Median glucose line overlay
 
-### 🏃‍♂️ Activity Integration
+### Activity Integration
 - **Strength Training**: Yellow overlay during workout periods
 - **Cardio**: Colored markers for cardio activities
 - **Sleep**: Blue highlighted periods with quality metrics
 
-### 🍽️ Nutrition Tracking
+### Nutrition Tracking
 - Meal markers with macro breakdown
 - Smart annotation positioning to avoid overlap
 - Glucose response correlation
 
-### 📈 Statistics Panel
+### Statistics Panel
 - Daily glucose statistics (mean, median, std dev)
 - Time in Range (TIR) percentage
 - Coefficient of Variation (CV)
